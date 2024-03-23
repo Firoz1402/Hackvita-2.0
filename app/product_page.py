@@ -4,7 +4,7 @@ import tempfile
 import os
 import numpy as np
 
-# Function to detect keypoints and compute descriptors for an image
+
 def detect_keypoints_and_descriptors(image):
     sift = cv2.SIFT_create()
     keypoints, descriptors = sift.detectAndCompute(image, None)
@@ -24,7 +24,7 @@ def main():
             keypoints, descriptors = detect_keypoints_and_descriptors(cv2.cvtColor(image, cv2.COLOR_BGR2GRAY))
             input_data.append({'image': image, 'keypoints': keypoints, 'descriptors': descriptors})
 
-        # Save uploaded video to a temporary file
+        
         with tempfile.NamedTemporaryFile(delete=False) as tmp_file:
             tmp_file.write(uploaded_video.read())
             video_path = tmp_file.name

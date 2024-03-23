@@ -1,23 +1,16 @@
 import streamlit as st
-
+import product_page
 def home_page():
     st.title("SnapSpot")
     st.write("Tired of scrubbing through endless video to find that specific scene?")
     st.write("Our innovative video search tool takes the hassle out of finding what you're looking for..")
     
-    # Add a button to redirect to the Product page
-    if st.button("Try Now!"):
-        st.session_state.page = product_page()
-def product_page():
-    st.title("Product Page")
-    st.write("This is the PRODUCT page.")
-    st.write("You can upload images and a video, and the app will detect occurrences of the uploaded images within the video.")
 
 def about_page():
     st.title("About Us")
     st.write("Meet our team:")
 
-    # Display information about each person
+
     st.markdown("---")
     st.header("Firoz Anjum Chowdhury")
     st.image("assets/firoz.jpeg", width=150)
@@ -40,7 +33,7 @@ def main():
     if page == "HOME":
         home_page()
     elif page == "Product":
-        product_page()
+        product_page.main()
     elif page == "About Us":
         about_page()
 
