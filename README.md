@@ -1,2 +1,12 @@
 # Hackvita-2.0
 The repository for Hackvita 2.0 organised by GDSC-JEC and GLUG, JEC on 22nd March 2024
+
+## How to Run
+
+To run the script, follow these steps:
+
+1. **Clone the Repository**:
+
+    ```bash
+    git clone https://github.com/Firoz1402/Hackvita-2.0
+    
