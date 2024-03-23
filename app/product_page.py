@@ -63,7 +63,7 @@ def main():
                     if m.distance < 0.75 * n.distance:
                         good_matches.append(m)
         
-                if len(good_matches) >= 6:
+                if len(good_matches) >= 5:
                     if not prev_matches[i]:
                         occurrence_start[i] = cap.get(cv2.CAP_PROP_POS_MSEC) / 1000
                         occurrences[i] += 1
