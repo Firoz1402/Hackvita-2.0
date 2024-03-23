@@ -10,3 +10,19 @@ To run the script, follow these steps:
     ```bash
     git clone https://github.com/Firoz1402/Hackvita-2.0
     
+2. **Locate the Directory**:
+
+    ```bash
+    cd Hackvita-2.0/
+
+3. **Install dependencies**:
+
+    ```bash
+    pip install -r requirements.txt
+
+4. **Run the Script**:
+
+    ```bash
+    streamlit run app/app.py
+
+    
