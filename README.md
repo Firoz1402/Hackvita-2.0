@@ -23,6 +23,7 @@ To run the script, follow these steps:
 4. **Run the Script**:
 
     ```bash
-    streamlit run app/app.py
+    cd app/
+    streamlit run app.py
 
     
